@@ -6,26 +6,11 @@ import java.util.List;
 import org.junit.Test;
 
 public class testCircle {
-    Dictionary d = new Dictionary();
-
-    @Test
-    public void testWorkDictionaryAdd() {
-        d.add("test", 1);
-        d.add("test1", 1);
-        d.add("test2", 3);
-        d.add("test", 3);
-        d.add("test", 1);
-        d.add("test3", 6);
-        d.add("test", 7);
-        assertTrue(true);
-    }
-
     @Test
     public void testfrequaehcy() {
         System.out.println(d.frecuaency(1));
         assertTrue(true);
     }
-
     @Test
     public void testWork() {
         List<Integer> testata = new ArrayList<Integer>();
@@ -39,13 +24,11 @@ public class testCircle {
         assertEquals(data, 1);
 
     }
-
     @Test
     public void testNull() {
         List<Integer> testata = null;
         int data = Circle.lastMan(testata);
         assertEquals(data, 0);
-
     }
 
 }
